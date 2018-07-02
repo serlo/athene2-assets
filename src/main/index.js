@@ -146,7 +146,7 @@ const initContentApi = () => {
     const target = $link.attr('target')
 
     const isInternalLink = url && (url.startsWith('/') || url.startsWith(origin))
-    const isBlank = target && target === '_blank';
+    const isBlank = target && target === '_blank'
 
     if (isInternalLink && !isBlank) {
       $link.attr('href', `${url}${query}`)
