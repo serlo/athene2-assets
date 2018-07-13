@@ -7,6 +7,8 @@ import 'magnific-popup'
 import moment from 'moment'
 import _ from 'underscore'
 
+import 'cookieconsent'
+
 import '../libs/polyfills'
 import Common from '../modules/common'
 import Content from '../modules/content'
@@ -52,7 +54,6 @@ require('bootstrap-datepicker')
 // FIXME needed?
 require('jasny-bootstrap/dist/js/jasny-bootstrap.js')
 
-// const App = () => {
 const setLanguage = () => {
   const language = $('html').attr('lang') || 'de'
 
@@ -145,7 +146,8 @@ const initContentApi = () => {
     const url = $link.attr('href')
     const target = $link.attr('target')
 
-    const isInternalLink = url && (url.startsWith('/') || url.startsWith(origin))
+    const isInternalLink =
+      url && (url.startsWith('/') || url.startsWith(origin))
     const isBlank = target && target === '_blank'
 
     if (isInternalLink && !isBlank) {
@@ -154,10 +156,28 @@ const initContentApi = () => {
   })
 }
 
+const initConsentBanner = () => {
+  window.cookieconsent.initialise({
+    content: {
+      message:
+        'Mit der Nutzung dieser Webseite erklärst Du Dich damit einverstanden, dass wir Cookies verwenden.',
+      dismiss: 'Verstanden',
+      link: 'Mehr Informationen findest Du in unserer Datenschutzerklärung',
+      href: 'https://de.serlo.org/datenschutz'
+    },
+    type: 'info',
+    palette: {
+      popup: { background: '#007ec1', text: '#ffffff', link: '#ffffff' },
+      button: { background: 'transparent', border: '#ffffff', text: '#ffffff' }
+    }
+  })
+}
+
 const init = $context => {
   setLanguage()
   initResizeEvent()
   initContentApi()
+  initConsentBanner()
 
   // create an system notification whenever Common.genericError is called
   Common.addEventListener('generic error', () => {
