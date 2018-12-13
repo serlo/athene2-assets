@@ -1,7 +1,7 @@
 {
-  "include": ["src"],
+  "include": ["src", "__tests__"],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,12 +16,6 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "strictNullChecks": true,
-    "target": "es6",
-    "baseUrl": "../packages",
-    "paths": {
-      "@splish-me/editor-core/*": ["./core/src/*"],
-      "@splish-me/editor-ui/*": ["./ui/src/*"],
-      "@splish-me/ory-editor-core/*": ["./ory-editor-core/src/*"]
-    }
+    "target": "es6"
   }
 }
