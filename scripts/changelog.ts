@@ -131,6 +131,7 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
   },
   {
     tagName: '4.0.0',
+    date: '2019-05-29',
     breakingChanges: ['Stylesheet changes'],
     changed: ['Updated logos of our partners'],
     fixed: ['Fix image light box on mobile'],
