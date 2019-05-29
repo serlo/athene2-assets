@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/serlo/athene2-assets/compare/3.7.3..HEAD)
+## [4.0.0](https://github.com/serlo/athene2-assets/compare/3.7.3..4.0.0)
+
+### Breaking Changes
+
+- Stylesheet changes
+
+### Changed
+
+- Updated logos of our partners
+
+### Fixed
+
+- Fix image light box on mobile
 
 ### Internal
 

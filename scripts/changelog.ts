@@ -130,6 +130,10 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     internal: ['Automatically deploy assets']
   },
   {
+    tagName: '4.0.0',
+    breakingChanges: ['Stylesheet changes'],
+    changed: ['Updated logos of our partners'],
+    fixed: ['Fix image light box on mobile'],
     internal: ['Build docker image serlo/legacy-editor-renderer']
   }
 ]
