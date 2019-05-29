@@ -1,13 +1,13 @@
 {
   "name": "@serlo/assets",
-  "version": "0.0.0",
+  "version": "4.0.0",
   "scripts": {
     "start": "serve --listen 8082 src",
     "predeploy": "find . -name '.DS_Store' -type f -delete",
     "deploy": "ts-node scripts/deploy"
   },
   "devDependencies": {
-    "@serlo/gcloud": "^0.0.0",
+    "@serlo/gcloud": "^4.0.0",
     "serve": "^10.0.0"
   },
   "private": true

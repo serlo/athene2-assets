@@ -1,6 +1,6 @@
 {
   "name": "@serlo/cloudflare",
-  "version": "0.0.0",
+  "version": "4.0.0",
   "dependencies": {
     "cloudflare": "^2.0.0"
   },
