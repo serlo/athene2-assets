@@ -130,7 +130,8 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     internal: ['Automatically deploy assets']
   },
   {
-    tagName: '4.0.0',
+    tagName: 'v4.0.0',
+    name: '4.0.0',
     date: '2019-05-29',
     breakingChanges: ['Stylesheet changes'],
     changed: ['Updated logos of our partners'],

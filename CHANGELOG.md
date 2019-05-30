@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [4.0.0](https://github.com/serlo/athene2-assets/compare/3.7.3..4.0.0) - May 29, 2019
+## [4.0.0](https://github.com/serlo/athene2-assets/compare/3.7.3..v4.0.0) - May 29, 2019
 
 ### Breaking Changes
 
