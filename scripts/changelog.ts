@@ -142,7 +142,7 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     tagName: 'v4.0.1',
     name: '4.0.1',
     date: '2019-06-04',
-    fixed: ['Show datetimes correctly'],
+    fixed: ['Show datetimes correctly']
   }
 ]
 
