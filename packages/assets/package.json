@@ -1,6 +1,6 @@
 {
   "name": "@serlo/assets",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "scripts": {
     "start": "serve --listen 8082 src",
     "predeploy": "find . -name '.DS_Store' -type f -delete",

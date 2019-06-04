@@ -1,6 +1,6 @@
 {
   "name": "@serlo/cloudflare-workers",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack",
