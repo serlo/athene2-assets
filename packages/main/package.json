@@ -1,6 +1,6 @@
 {
   "name": "@serlo/athene2-assets",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "scripts": {
     "build": "npm-run-all build:*",
     "prebuild:assets": "rimraf dist",
