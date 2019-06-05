@@ -145,6 +145,15 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     fixed: ['Show datetimes correctly']
   },
   {
+    tagName: 'v4.1.0',
+    name: '4.1.0',
+    date: '2019-06-04',
+    changed: ['Update dependencies']
+  },
+  {
+    tagName: 'v4.1.1',
+    name: '4.1.1',
+    date: '2019-06-05',
     fixed: ["Don't throw error if `MathJax` is not defined"],
     internal: [
       'Make sourcemap urls relative to workspace root',
