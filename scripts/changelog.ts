@@ -143,6 +143,13 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     name: '4.0.1',
     date: '2019-06-04',
     fixed: ['Show datetimes correctly']
+  },
+  {
+    fixed: ["Don't throw error if `MathJax` is not defined"],
+    internal: [
+      'Make sourcemap urls relative to workspace root',
+      'Track issues only from *.serlo.org'
+    ]
   }
 ]
 
