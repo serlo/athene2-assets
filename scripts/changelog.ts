@@ -143,6 +143,9 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     name: '4.0.1',
     date: '2019-06-04',
     fixed: ['Show datetimes correctly']
+  },
+  {
+    internal: ['Make sourcemap urls relative to workspace root']
   }
 ]
 
