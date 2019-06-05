@@ -4,9 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased](https://github.com/serlo/athene2-assets/compare/v4.0.1..HEAD)
 
+### Fixed
+
+- Don't throw error if `MathJax` is not defined
+
 ### Internal
 
 - Make sourcemap urls relative to workspace root
+- Track issues only from \*.serlo.org
 
 ## [4.0.1](https://github.com/serlo/athene2-assets/compare/v4.0.0..v4.0.1) - June 4, 2019
 
