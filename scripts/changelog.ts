@@ -159,6 +159,9 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
       'Make sourcemap urls relative to workspace root',
       'Track issues only from *.serlo.org'
     ]
+  },
+  {
+    fixed: ["Don't throw error if `MathJax` is not defined (again)"]
   }
 ]
 
