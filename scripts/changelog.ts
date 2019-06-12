@@ -165,6 +165,12 @@ const releases: Parameters<typeof generateChangelog>['0'] = [
     name: '4.1.2',
     date: '2019-06-12',
     fixed: ["Don't throw error if `MathJax` is not defined (again)"]
+  },
+  {
+    tagName: 'v4.1.3',
+    name: '4.1.3',
+    date: '2019-06-12',
+    fixed: ["Don't throw error if `MathJax` is not defined (again)"]
   }
 ]
 

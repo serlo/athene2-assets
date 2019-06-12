@@ -21,7 +21,7 @@
  */
 import $ from 'jquery'
 
-import { reprocess, typeset } from '../../modules/mathjax'
+import { reprocess, typeset, queue } from '../../modules/mathjax'
 import play from './sounds'
 
 var SingleChoice

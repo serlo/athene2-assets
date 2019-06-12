@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.1.3](https://github.com/serlo/athene2-assets/compare/v4.1.2..v4.1.3) - June 12, 2019
+
+### Fixed
+
+- Don't throw error if `MathJax` is not defined (again)
+
 ## [4.1.2](https://github.com/serlo/athene2-assets/compare/v4.1.1..v4.1.2) - June 12, 2019
 
 ### Fixed
