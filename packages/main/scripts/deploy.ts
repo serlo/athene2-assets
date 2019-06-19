@@ -38,20 +38,15 @@ enum Environment {
   green = 'b'
 }
 
-const gcloudProject = `--project=serlo-assets`
 const gcloudStorageOptions = {
   bucket: 'packages.serlo.org'
 }
 
 const packageJsonPath = path.join(root, 'package.json')
-const gcfDir = path.join(root, 'dist-gcf')
 
 const fsOptions = { encoding: 'utf-8' }
 
-const copyFile = util.promisify(fs.copyFile)
-const readDir = util.promisify(fs.readdir)
 const readFile = util.promisify(fs.readFile)
-const writeFile = util.promisify(fs.writeFile)
 
 const signale = new Signale({ interactive: true })
 
@@ -143,8 +138,15 @@ async function uploadBundle(environment: Environment): Promise<void> {
 
 async function flushCache(environment: Environment): Promise<void> {
   const prefix = `athene2-assets@${environment}/`
-  const files = await readDir(distPath).then(R.map(file => `${prefix}${file}`))
-
+  const webpackConfig: {
+    entry: { [key: string]: unknown }
+  } = require('../webpack.base.config')
+  const entries = R.keys(webpackConfig.entry) as string[]
+  const exts = ['js', 'js.map', 'css']
+  const files = R.map<R.KeyValuePair<string, string>, string>(
+    ([entry, ext]) => `${prefix}${entry}.${ext}`,
+    R.xprod<string, string>(entries, exts)
+  )
   const urls = R.splitEvery(
     30,
     R.map(file => `https://packages.serlo.org/${file}`, files)
