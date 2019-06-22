@@ -5,12 +5,6 @@
     "build": "npm-run-all build:*",
     "prebuild:assets": "rimraf dist",
     "build:assets": "cross-env NODE_ENV=production webpack --config webpack.prod.config",
-    "deploy": "ts-node scripts/deploy",
-    "postdeploy": "yarn sentry-release",
-    "sentry-release": "run-s sentry-release:create sentry-release:set-commits sentry-release:deploy",
-    "sentry-release:create": "sentry-cli releases new --project athene2-assets athene2-assets@$npm_package_version",
-    "sentry-release:set-commits": "sentry-cli releases set-commits --auto athene2-assets@$npm_package_version",
-    "sentry-release:deploy": "sentry-cli releases deploys athene2-assets@$npm_package_version new --env production",
     "start": "webpack-dev-server --config webpack.dev.config"
   },
   "dependencies": {
