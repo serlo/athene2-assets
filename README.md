@@ -1,5 +1,7 @@
 <img src="https://assets.serlo.org/meta/logo.png" alt="Serlo logo" title="Serlo" align="right" height="60" />
 
-# athene2-assets
+## 🚨 Moved to [`serlo/serlo.org/packages/public/client`](https://github.com/serlo/serlo.org/tree/master/packages/public/client) 🚨
 
-[![Build status](https://img.shields.io/circleci/project/github/serlo/athene2-assets/master.svg)](https://circleci.com/gh/serlo/athene2-assets) [![Kanban board](https://img.shields.io/badge/Kanban-board-brightgreen.svg)](https://github.com/orgs/serlo/projects/1)
+The [`serlo/athene2-assets`](https://github.com/serlo/athene2-assets) repository has been migrated to [`packages/public/client`](https://github.com/serlo/serlo.org/tree/master/packages/public/client) folder of the [`serlo/serlo.org`](https://github.com/serlo/serlo.org) *monorepo*.
+
+We will merge open issues over time and archive this repository afterwards. New issues and pull requests should be created in [`serlo/serlo.org`](https://github.com/serlo/serlo.org).
