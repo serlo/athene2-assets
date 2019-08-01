@@ -1,6 +1,6 @@
 <img src="https://assets.serlo.org/meta/logo.png" alt="Serlo logo" title="Serlo" align="right" height="60" />
 
-## 🚨 Moved to [`serlo/serlo.org/packages/public/client`](https://github.com/serlo/serlo.org/tree/master/packages/public/client) 🚨
+## 🚨 Moved to [`serlo/serlo.org`](https://github.com/serlo/serlo.org/tree/master/packages/public/client) 🚨
 
 The [`serlo/athene2-assets`](https://github.com/serlo/athene2-assets) repository has been migrated to [`packages/public/client`](https://github.com/serlo/serlo.org/tree/master/packages/public/client) folder of the [`serlo/serlo.org`](https://github.com/serlo/serlo.org) *monorepo*.
 
